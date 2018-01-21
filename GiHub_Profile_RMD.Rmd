@@ -1,0 +1,24 @@
+---
+title: "Data Science Profile"
+author: "Cory Thigpen"
+date: "January 20, 2018"
+output: 
+  html_document:
+  keep_md: true
+---
+# Data Science Profile
+1 Computer Programming<br>
+4 Math<br>
+3 Statistics<br>
+1 Machine Learning<br>
+4 Domain Expertise<br>
+4 Communication and Presentation<br>
+3 Data Visualization<br>
+
+```{r}
+Skills <- c("Comp Prog", "Math", "Statistics", "Mach Learning", "Domain Exp", "Comm and Pres", "Data Vis")
+Ranking <- c(1,4,3,1,4,4,3)
+corythigpen <- data.frame(Skills,Ranking)
+barplot(corythigpen$Ranking, names=corythigpen$Skills, xlab="Skills", ylab="Ranking", main="Cory Thigpen - Data Science Skills Jan 2018", cex.names=.4)
+
+```
